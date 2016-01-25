@@ -7,48 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2ADD217F1C565C7500252DB5 /* VersionKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ADD217E1C565C7500252DB5 /* VersionKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2ADD21861C565C7500252DB5 /* VersionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ADD217B1C565C7500252DB5 /* VersionKit.framework */; };
-		2ADD218B1C565C7500252DB5 /* VersionKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD218A1C565C7500252DB5 /* VersionKitTests.swift */; };
-		2ADD219C1C565CA700252DB5 /* Version.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ADD219B1C565CA700252DB5 /* Version.h */; };
-		2ADD21A51C565D3B00252DB5 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD21A31C565D2500252DB5 /* Version.swift */; };
+		2ADD21E61C56642E00252DB5 /* VersionKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ADD21E51C56642E00252DB5 /* VersionKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2ADD21ED1C56642E00252DB5 /* VersionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ADD21E31C56642D00252DB5 /* VersionKit.framework */; };
+		2ADD21F21C56642E00252DB5 /* VersionKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD21F11C56642E00252DB5 /* VersionKitTests.swift */; };
+		2ADD21FA1C56643900252DB5 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD21A31C565D2500252DB5 /* Version.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2ADD21871C565C7500252DB5 /* PBXContainerItemProxy */ = {
+		2ADD21EE1C56642E00252DB5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2ADD21721C565C7500252DB5 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2ADD217A1C565C7500252DB5;
+			remoteGlobalIDString = 2ADD21E21C56642D00252DB5;
 			remoteInfo = VersionKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2ADD217B1C565C7500252DB5 /* VersionKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VersionKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2ADD217E1C565C7500252DB5 /* VersionKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VersionKit.h; sourceTree = "<group>"; };
-		2ADD21801C565C7500252DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2ADD21851C565C7500252DB5 /* VersionKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VersionKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2ADD218A1C565C7500252DB5 /* VersionKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionKitTests.swift; sourceTree = "<group>"; };
-		2ADD218C1C565C7500252DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2ADD219B1C565CA700252DB5 /* Version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Version.h; sourceTree = "<group>"; };
-		2ADD219D1C565CA700252DB5 /* Version.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Version.m; sourceTree = "<group>"; };
 		2ADD21A31C565D2500252DB5 /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		2ADD21E31C56642D00252DB5 /* VersionKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VersionKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ADD21E51C56642E00252DB5 /* VersionKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VersionKit.h; sourceTree = "<group>"; };
+		2ADD21E71C56642E00252DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ADD21EC1C56642E00252DB5 /* VersionKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VersionKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ADD21F11C56642E00252DB5 /* VersionKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionKitTests.swift; sourceTree = "<group>"; };
+		2ADD21F31C56642E00252DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2ADD21771C565C7500252DB5 /* Frameworks */ = {
+		2ADD21DF1C56642D00252DB5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2ADD21821C565C7500252DB5 /* Frameworks */ = {
+		2ADD21E91C56642E00252DB5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ADD21861C565C7500252DB5 /* VersionKit.framework in Frameworks */,
+				2ADD21ED1C56642E00252DB5 /* VersionKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +55,8 @@
 		2ADD21711C565C7500252DB5 = {
 			isa = PBXGroup;
 			children = (
-				2ADD217D1C565C7500252DB5 /* VersionKit */,
-				2ADD21891C565C7500252DB5 /* VersionKitTests */,
-				2ADD219A1C565CA700252DB5 /* Version */,
+				2ADD21E41C56642E00252DB5 /* VersionKit */,
+				2ADD21F01C56642E00252DB5 /* VersionKitTests */,
 				2ADD217C1C565C7500252DB5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,63 +64,53 @@
 		2ADD217C1C565C7500252DB5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2ADD217B1C565C7500252DB5 /* VersionKit.framework */,
-				2ADD21851C565C7500252DB5 /* VersionKitTests.xctest */,
+				2ADD21E31C56642D00252DB5 /* VersionKit.framework */,
+				2ADD21EC1C56642E00252DB5 /* VersionKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2ADD217D1C565C7500252DB5 /* VersionKit */ = {
+		2ADD21E41C56642E00252DB5 /* VersionKit */ = {
 			isa = PBXGroup;
 			children = (
-				2ADD217E1C565C7500252DB5 /* VersionKit.h */,
+				2ADD21E51C56642E00252DB5 /* VersionKit.h */,
 				2ADD21A31C565D2500252DB5 /* Version.swift */,
-				2ADD21801C565C7500252DB5 /* Info.plist */,
+				2ADD21E71C56642E00252DB5 /* Info.plist */,
 			);
 			path = VersionKit;
 			sourceTree = "<group>";
 		};
-		2ADD21891C565C7500252DB5 /* VersionKitTests */ = {
+		2ADD21F01C56642E00252DB5 /* VersionKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				2ADD218A1C565C7500252DB5 /* VersionKitTests.swift */,
-				2ADD218C1C565C7500252DB5 /* Info.plist */,
+				2ADD21F11C56642E00252DB5 /* VersionKitTests.swift */,
+				2ADD21F31C56642E00252DB5 /* Info.plist */,
 			);
 			path = VersionKitTests;
-			sourceTree = "<group>";
-		};
-		2ADD219A1C565CA700252DB5 /* Version */ = {
-			isa = PBXGroup;
-			children = (
-				2ADD219B1C565CA700252DB5 /* Version.h */,
-				2ADD219D1C565CA700252DB5 /* Version.m */,
-			);
-			path = Version;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2ADD21781C565C7500252DB5 /* Headers */ = {
+		2ADD21E01C56642D00252DB5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ADD217F1C565C7500252DB5 /* VersionKit.h in Headers */,
-				2ADD219C1C565CA700252DB5 /* Version.h in Headers */,
+				2ADD21E61C56642E00252DB5 /* VersionKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2ADD217A1C565C7500252DB5 /* VersionKit */ = {
+		2ADD21E21C56642D00252DB5 /* VersionKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2ADD218F1C565C7500252DB5 /* Build configuration list for PBXNativeTarget "VersionKit" */;
+			buildConfigurationList = 2ADD21F41C56642E00252DB5 /* Build configuration list for PBXNativeTarget "VersionKit" */;
 			buildPhases = (
-				2ADD21761C565C7500252DB5 /* Sources */,
-				2ADD21771C565C7500252DB5 /* Frameworks */,
-				2ADD21781C565C7500252DB5 /* Headers */,
-				2ADD21791C565C7500252DB5 /* Resources */,
+				2ADD21DE1C56642D00252DB5 /* Sources */,
+				2ADD21DF1C56642D00252DB5 /* Frameworks */,
+				2ADD21E01C56642D00252DB5 /* Headers */,
+				2ADD21E11C56642D00252DB5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -132,25 +118,25 @@
 			);
 			name = VersionKit;
 			productName = VersionKit;
-			productReference = 2ADD217B1C565C7500252DB5 /* VersionKit.framework */;
+			productReference = 2ADD21E31C56642D00252DB5 /* VersionKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2ADD21841C565C7500252DB5 /* VersionKitTests */ = {
+		2ADD21EB1C56642E00252DB5 /* VersionKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2ADD21921C565C7500252DB5 /* Build configuration list for PBXNativeTarget "VersionKitTests" */;
+			buildConfigurationList = 2ADD21F71C56642E00252DB5 /* Build configuration list for PBXNativeTarget "VersionKitTests" */;
 			buildPhases = (
-				2ADD21811C565C7500252DB5 /* Sources */,
-				2ADD21821C565C7500252DB5 /* Frameworks */,
-				2ADD21831C565C7500252DB5 /* Resources */,
+				2ADD21E81C56642E00252DB5 /* Sources */,
+				2ADD21E91C56642E00252DB5 /* Frameworks */,
+				2ADD21EA1C56642E00252DB5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2ADD21881C565C7500252DB5 /* PBXTargetDependency */,
+				2ADD21EF1C56642E00252DB5 /* PBXTargetDependency */,
 			);
 			name = VersionKitTests;
 			productName = VersionKitTests;
-			productReference = 2ADD21851C565C7500252DB5 /* VersionKitTests.xctest */;
+			productReference = 2ADD21EC1C56642E00252DB5 /* VersionKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -163,10 +149,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Richard Stelling";
 				TargetAttributes = {
-					2ADD217A1C565C7500252DB5 = {
+					2ADD21E21C56642D00252DB5 = {
 						CreatedOnToolsVersion = 7.2;
 					};
-					2ADD21841C565C7500252DB5 = {
+					2ADD21EB1C56642E00252DB5 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -183,21 +169,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2ADD217A1C565C7500252DB5 /* VersionKit */,
-				2ADD21841C565C7500252DB5 /* VersionKitTests */,
+				2ADD21E21C56642D00252DB5 /* VersionKit */,
+				2ADD21EB1C56642E00252DB5 /* VersionKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2ADD21791C565C7500252DB5 /* Resources */ = {
+		2ADD21E11C56642D00252DB5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2ADD21831C565C7500252DB5 /* Resources */ = {
+		2ADD21EA1C56642E00252DB5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -207,29 +193,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2ADD21761C565C7500252DB5 /* Sources */ = {
+		2ADD21DE1C56642D00252DB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ADD21A51C565D3B00252DB5 /* Version.swift in Sources */,
+				2ADD21FA1C56643900252DB5 /* Version.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2ADD21811C565C7500252DB5 /* Sources */ = {
+		2ADD21E81C56642E00252DB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ADD218B1C565C7500252DB5 /* VersionKitTests.swift in Sources */,
+				2ADD21F21C56642E00252DB5 /* VersionKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2ADD21881C565C7500252DB5 /* PBXTargetDependency */ = {
+		2ADD21EF1C56642E00252DB5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2ADD217A1C565C7500252DB5 /* VersionKit */;
-			targetProxy = 2ADD21871C565C7500252DB5 /* PBXContainerItemProxy */;
+			target = 2ADD21E21C56642D00252DB5 /* VersionKit */;
+			targetProxy = 2ADD21EE1C56642E00252DB5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -323,7 +309,7 @@
 			};
 			name = Release;
 		};
-		2ADD21901C565C7500252DB5 /* Debug */ = {
+		2ADD21F51C56642E00252DB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEFINES_MODULE = YES;
@@ -339,7 +325,7 @@
 			};
 			name = Debug;
 		};
-		2ADD21911C565C7500252DB5 /* Release */ = {
+		2ADD21F61C56642E00252DB5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEFINES_MODULE = YES;
@@ -355,7 +341,7 @@
 			};
 			name = Release;
 		};
-		2ADD21931C565C7500252DB5 /* Debug */ = {
+		2ADD21F81C56642E00252DB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = VersionKitTests/Info.plist;
@@ -365,7 +351,7 @@
 			};
 			name = Debug;
 		};
-		2ADD21941C565C7500252DB5 /* Release */ = {
+		2ADD21F91C56642E00252DB5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = VersionKitTests/Info.plist;
@@ -387,19 +373,19 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2ADD218F1C565C7500252DB5 /* Build configuration list for PBXNativeTarget "VersionKit" */ = {
+		2ADD21F41C56642E00252DB5 /* Build configuration list for PBXNativeTarget "VersionKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2ADD21901C565C7500252DB5 /* Debug */,
-				2ADD21911C565C7500252DB5 /* Release */,
+				2ADD21F51C56642E00252DB5 /* Debug */,
+				2ADD21F61C56642E00252DB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		2ADD21921C565C7500252DB5 /* Build configuration list for PBXNativeTarget "VersionKitTests" */ = {
+		2ADD21F71C56642E00252DB5 /* Build configuration list for PBXNativeTarget "VersionKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2ADD21931C565C7500252DB5 /* Debug */,
-				2ADD21941C565C7500252DB5 /* Release */,
+				2ADD21F81C56642E00252DB5 /* Debug */,
+				2ADD21F91C56642E00252DB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
