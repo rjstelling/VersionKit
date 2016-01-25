@@ -10,6 +10,8 @@ import Foundation
 
 public struct Version {
     
+    internal let frameworkVersion = VersionKitVersionNumber
+    
     enum LogicalOperator: String {
         
         case Optimistic         = "~>"
