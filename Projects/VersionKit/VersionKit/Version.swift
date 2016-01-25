@@ -87,7 +87,6 @@ public struct Version {
     public init?(versionString: String) {
         
         guard Version.formatValidation(versionString) else {
-            print("HERE2")
             return nil
         }
         
@@ -105,7 +104,6 @@ public struct Version {
                 self.init(major: maj, minor: min, build: bld, iteration: itr, atom: atm)
         }
         else {
-            print("HERE1")
             return nil
         }
     }
