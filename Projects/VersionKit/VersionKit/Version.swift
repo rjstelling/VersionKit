@@ -29,7 +29,7 @@ public struct Version {
     var iteration: UInt16   //max: 65535
     var atom: UInt16        //max: 65535
     
-    public var version: UInt64 {
+    public var versionInteger: UInt64 {
         
         let byte7 = (UInt64(major) << 56)
         let byte6 = (UInt64(minor) << 48)
@@ -87,6 +87,7 @@ public struct Version {
     public init?(versionString: String) {
         
         guard Version.formatValidation(versionString) else {
+            print("HERE2")
             return nil
         }
         
@@ -104,6 +105,7 @@ public struct Version {
                 self.init(major: maj, minor: min, build: bld, iteration: itr, atom: atm)
         }
         else {
+            print("HERE1")
             return nil
         }
     }
@@ -150,25 +152,25 @@ public struct Version {
         
         switch `operator` {
             
-        case .Optimistic where (self.version >= version.version && self.version <= version.maxOptimisticVersion()):
+        case .Optimistic where (self.versionInteger >= version.versionInteger && self.versionInteger <= version.maxOptimisticVersion()):
             return true
             
-        case .GreaterThan where self.version > version.version:
+        case .GreaterThan where self.versionInteger > version.versionInteger:
             return true
             
-        case .GreaterThanEqualTo where self.version >= version.version:
+        case .GreaterThanEqualTo where self.versionInteger >= version.versionInteger:
             return true
             
-        case .LessThan where self.version < version.version:
+        case .LessThan where self.versionInteger < version.versionInteger:
             return true
             
-        case .LessThanEqualTo where self.version <= version.version:
+        case .LessThanEqualTo where self.versionInteger <= version.versionInteger:
             return true
             
-        case .EqualTo where self.version == version.version:
+        case .EqualTo where self.versionInteger == version.versionInteger:
             return true
             
-        case .NotEqualTo where self.version != version.version:
+        case .NotEqualTo where self.versionInteger != version.versionInteger:
             return true
             
         default:
@@ -202,7 +204,7 @@ extension Version: CustomDebugStringConvertible {
     
     public var debugDescription: String {
         get {
-            return "\(_stdlib_getDemangledTypeName(self)) -> \(self.versionString) (\(self.version))"
+            return "\(_stdlib_getDemangledTypeName(self)) -> \(self.versionString) (\(self.versionInteger))"
         }
     }
     

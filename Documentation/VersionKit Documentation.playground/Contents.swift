@@ -1,264 +1,36 @@
 //: VersionKit - A lightweight semantic version checker written in Swift
+import UIKit
 import VersionKit
+import XCPlayground
 
 //: Create a `Version` instance by passing the sematic version string
-//let version = Version(versionString: "1.2.3")
-
-
-
-//let versionString = "1.2.3.4.5"
-//
-//let sections = versionString.characters.split { $0 == "." }.map { String($0) }
-//
-//print("\(sections)")
-//
-//var empty: [String] = ["0", "0", "0", "0", "0"]
-//let elements: [String] = ["1", "1"]
-//empty.replaceRange(0..<elements.count, with: elements)
-//
-//exit(1)
-
-//let versions = ["1.0.0", "255.2.3.4", "123456789.2123456789.3123456789"]
-//
-//let elements = ["254", "2", "3", "4"]
-//
-//let str1 = "127"
-//let ele1 = str1
-//let num1 = Int8(ele1)
-//
-//let maj1 = Int8(String(elements[0]))
-//if  let maj = Int8(String(elements[0])),
-//    let min = Int8(String(elements[1])) {
-// 
-//    print("HERE: \(maj) \(min)")
-//}
-//else
-//{
-//    print("😬")
-//}
-
-//let versionString = "1.2.3.4.5"
-//let elements = versionString.characters.split { $0 == " " }
-//String(elements[0])
-//
-//exit(0)
-
-
-
-
-//let versions = [
-//    "1.0.0.0.1",
-//    "1.0.0",
-//    "2.0.0",
-//    "3.1.0",
-//    "4.5.256",
-//    "0.99.999",
-//    "1.18.587",
-//    "1.21.350",
-//    "1.21.359",
-//    "1.21.359",
-//    "0.21.359",
-//    "1.21.359",
-//    "123456789.2123456789.3123456789",
-//    "1.21",
-//    "QQ",
-//    "0.1",
-//    "G",
-//    "4",
-//    "0",
-//    "iluglihjwvsmsv",
-//    "5645644.654645654645.321354654654.64864645.648645654",
-//    "9.9.",
-//    "8.8.+",
-//    "1.2.3.4.5.6",
-//    "255.2.3.4",
-//    "1000.1000.3.4",
-//    "1.",
-//    "2.3.",
-//    "255.255.1000.1000.65535",
-//    "65535.65535.65535.65535.65535",
-//    "255.255.65535.65535.65535",
-//    "255.255.65535.65535.65534"
-//    
-//]
-//
-//let testVersions = [
-//    "> 1.0.0",
-//    "> 2.0.0",
-//    "> 3.1.0",
-//    "> 4.5.256",
-//    "> 0.99.999",
-//    "> 1.18.587",
-//    "> 1.21.350",
-//    "> 1.21.359",
-//    "> 1.21.359",
-//    "> 0.21.359",
-//    "> 1.21.359",
-//    "> 1.21",
-//    "> 0.1",
-//    "> 4",
-//    "> 1.0.0",
-//    "> 2.0.0",
-//    "> 3.1.0",
-//    "> 4.5.256",
-//    "> 0.99.999",
-//    "> 1.18.587",
-//    "> 1.21.350",
-//    "> 1.21.359",
-//    "> 1.21.359",
-//    "> 0.21.359",
-//    "> 1.21.359",
-//    "> 1.21",
-//    "> 0.1",
-//    "> 4",
-//    
-//    //>=
-//    ">= 1.0.0",
-//    ">= 2.0.0",
-//    ">= 3.1.0",
-//    ">= 4.5.256",
-//    ">= 0.99.999",
-//    ">= 1.18.587",
-//    ">= 1.21.350",
-//    ">= 1.21.359",
-//    ">= 1.21.359",
-//    ">= 0.21.359",
-//    ">= 1.21.359",
-//    ">= 1.21",
-//    ">= 0.1",
-//    ">= 4",
-//    ">= 1.0.0",
-//    ">= 2.0.0",
-//    ">= 3.1.0",
-//    ">= 4.5.256",
-//    ">= 0.99.999",
-//    ">= 1.18.587",
-//    ">= 1.21.350",
-//    ">= 1.21.359",
-//    ">= 1.21.359",
-//    ">= 0.21.359",
-//    ">= 1.21.359",
-//    ">= 1.21",
-//    ">= 0.1",
-//    ">= 4",
-//    
-//    //<=
-//    "<= 1.0.0",
-//    "<= 2.0.0",
-//    "<= 3.1.0",
-//    "<= 4.5.256",
-//    "<= 0.99.999",
-//    "<= 1.18.587",
-//    "<= 1.21.350",
-//    "<= 1.21.359",
-//    "<= 1.21.359",
-//    "<= 0.21.359",
-//    "<= 1.21.359",
-//    "<= 1.21",
-//    "<= 0.1",
-//    "<= 4",
-//    "<= 1.0.0",
-//    "<= 2.0.0",
-//    "<= 3.1.0",
-//    "<= 4.5.256",
-//    "<= 0.99.999",
-//    "<= 1.18.587",
-//    "<= 1.21.350",
-//    "<= 1.21.359",
-//    "<= 1.21.359",
-//    "<= 0.21.359",
-//    "<= 1.21.359",
-//    "<= 1.21",
-//    "<= 0.1",
-//    "<= 4",
-//    "> 255.255.65535.65535.65535",
-//    "> 255.255.65535.65535.65534",
-//    ">= 255.255.65535.65535.65535",
-//    ">= 255.255.65535.65535.65534",
-//    "< 255.255.65535.65535.65535",
-//    "< 255.255.65535.65535.65534",
-//    "<= 255.255.65535.65535.65535",
-//    "<= 255.255.65535.65535.65534",
-//    "== 255.255.65535.65535.65535",
-//    "== 255.255.65535.65535.65534",
-//    
-//    "== 255.255.65535.65535.65536"
-//]
-
-//0.1.0 >= 0.21.359
-
-/*PASS: 0.0.0 >= 0.99.999
-PASS: 0.0.0 >= 0.21.359
-PASS: 0.0.0 >= 0.1
-PASS: 0.0.0 >= 0.99.999
-PASS: 0.0.0 >= 0.21.359
-PASS: 0.0.0 >= 0.1
-*/
-
-let versions = ["0.1.0", "0.1.1", "0.1.1.1", "0.2.1.1", "0.1.0.1", "0.1.2.55", "5.1"]
-
-let testVersions = ["!= 5.1", "~> 5", "~> 0.1", "~> 0.1.1", "~> 0.1.2"]
+let versionString = "1.2.3.4.5"
+guard let version = Version(versionString: versionString) else {
     
-var fails = 0
-var passes = 0
-
-//for versStr in versions {
-//
-//    if let vers = Version(versionString: versStr) {
-//        print("Pass: \(vers.versionString) -> \(vers.version)")
-//        passes++
-//    }
-//    else {
-//        //print("Fail: \(versStr)")
-//        fails++
-//    }
-//}
-
-for versStr in versions {
-
-    var vers = Version(versionString: versStr)
-    
-    if vers != nil {
-        
-        for testStr in testVersions {
-
-            if vers!.validate(testStr) {
-                print("PASS: \(vers!) \(testStr)")
-                passes++
-            }
-            else {
-                fails++
-            }
-        }
-    }
-    else {
-        fails++
-    }
+    print("Failed to create Version() object using: \(versionString)")
+    XCPlaygroundPage.currentPage.finishExecution()
 }
 
-//let versInt = [1, 2, 3, 4, 5, 255]
-//for versStr in versInt {
-//    
-//    var vers = Version(version: versStr)
-//    
-//    if vers != nil {
-//        
-//        for testStr in testVersions {
-//            
-//            if vers!.validate(testStr) {
-//                print("PASS: \(vers!) \(testStr)")
-//                passes++
-//            }
-//            else {
-//                fails++
-//            }
-//        }
-//    }
-//    else {
-//        fails++
-//    }
-//}
+//: Test a `version` with; >, <, ==, >=, <= and ~> operators
 
-print("\nTotal passes: \(passes)")
-print("Total fails: \(fails)")
+if version.validate("< 2.0") {
+    "version is less than 2.0"
+}
+
+//: The Optimistic operator will match any version upto but not greater-then the specified version
+
+if version.validate("~> 1.2.3") {
+    
+    "version will match 1.2.3.x.x"
+}
+
+if version.validate("~> 1.2.4") {
+    
+    "Should not run"
+}
+else {
+    
+    "version will not match 1.2.4.x.x"
+}
+
 

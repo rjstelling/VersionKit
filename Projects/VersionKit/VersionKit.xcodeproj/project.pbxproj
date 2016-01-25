@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 47;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -158,7 +158,7 @@
 				};
 			};
 			buildConfigurationList = 2ADD21751C565C7500252DB5 /* Build configuration list for PBXProject "VersionKit" */;
-			compatibilityVersion = "Xcode 6.3";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -380,6 +380,7 @@
 				2ADD21F61C56642E00252DB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2ADD21F71C56642E00252DB5 /* Build configuration list for PBXNativeTarget "VersionKitTests" */ = {
 			isa = XCConfigurationList;
@@ -388,6 +389,7 @@
 				2ADD21F91C56642E00252DB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
