@@ -5,6 +5,8 @@
 A lightweight semantic version checker written in Swift. Supports upto 5 version parts. 
 
 ##Usage
+    
+    import VersionKit
 
     let version = Version(versionString: "1.2.3")
     
