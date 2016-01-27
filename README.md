@@ -15,3 +15,6 @@ A lightweight semantic version checker written in Swift. Supports upto 5 version
         "version will match 1.2.x.y.z"
     }
     
+## Thanks to
+
+- (Henry Gibson)[http://thisismyengine.com] 
