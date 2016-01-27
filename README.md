@@ -17,4 +17,5 @@ A lightweight semantic version checker written in Swift. Supports upto 5 version
     
 ## Thanks to
 
-- (Henry Gibson)[http://thisismyengine.com] 
+- [Henry Gibson](http://thisismyengine.com)
+- 
