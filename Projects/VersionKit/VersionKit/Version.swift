@@ -87,7 +87,6 @@ public struct Version {
     public init?(versionString: String) {
         
         guard Version.formatValidation(versionString) else {
-            print("HERE2")
             return nil
         }
         
@@ -105,7 +104,6 @@ public struct Version {
                 self.init(major: maj, minor: min, build: bld, iteration: itr, atom: atm)
         }
         else {
-            print("HERE1")
             return nil
         }
     }
@@ -204,7 +202,7 @@ extension Version: CustomDebugStringConvertible {
     
     public var debugDescription: String {
         get {
-            return "\(_stdlib_getDemangledTypeName(self)) -> \(self.versionString) (\(self.versionInteger))"
+            return "\(String(self.dynamicType)) -> \(self.versionString) (\(self.versionInteger))"
         }
     }
     
