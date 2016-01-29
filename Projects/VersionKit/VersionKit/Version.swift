@@ -202,7 +202,7 @@ extension Version: CustomDebugStringConvertible {
     
     public var debugDescription: String {
         get {
-            return "\(_stdlib_getDemangledTypeName(self)) -> \(self.versionString) (\(self.versionInteger))"
+            return "\(String(self.dynamicType)) -> \(self.versionString) (\(self.versionInteger))"
         }
     }
     
