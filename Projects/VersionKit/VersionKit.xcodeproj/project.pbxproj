@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AB7AD071D53723400A5F64A /* VersionKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ADD21E51C56642E00252DB5 /* VersionKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AB7AD081D53723400A5F64A /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD21A31C565D2500252DB5 /* Version.swift */; };
 		2ADD21E61C56642E00252DB5 /* VersionKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ADD21E51C56642E00252DB5 /* VersionKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2ADD21ED1C56642E00252DB5 /* VersionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ADD21E31C56642D00252DB5 /* VersionKit.framework */; };
 		2ADD21F21C56642E00252DB5 /* VersionKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD21F11C56642E00252DB5 /* VersionKitTests.swift */; };
@@ -24,16 +26,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2AB7ACFF1D53721A00A5F64A /* VersionKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VersionKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AB7AD091D53726F00A5F64A /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		2AB7AD0A1D53726F00A5F64A /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 		2ADD21A31C565D2500252DB5 /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		2ADD21E31C56642D00252DB5 /* VersionKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VersionKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADD21E51C56642E00252DB5 /* VersionKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VersionKit.h; sourceTree = "<group>"; };
-		2ADD21E71C56642E00252DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2ADD21EC1C56642E00252DB5 /* VersionKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VersionKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADD21F11C56642E00252DB5 /* VersionKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionKitTests.swift; sourceTree = "<group>"; };
 		2ADD21F31C56642E00252DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2AB7ACFB1D53721A00A5F64A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2ADD21DF1C56642D00252DB5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,6 +77,7 @@
 			children = (
 				2ADD21E31C56642D00252DB5 /* VersionKit.framework */,
 				2ADD21EC1C56642E00252DB5 /* VersionKitTests.xctest */,
+				2AB7ACFF1D53721A00A5F64A /* VersionKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,7 +87,8 @@
 			children = (
 				2ADD21E51C56642E00252DB5 /* VersionKit.h */,
 				2ADD21A31C565D2500252DB5 /* Version.swift */,
-				2ADD21E71C56642E00252DB5 /* Info.plist */,
+				2AB7AD091D53726F00A5F64A /* Info-iOS.plist */,
+				2AB7AD0A1D53726F00A5F64A /* Info-macOS.plist */,
 			);
 			path = VersionKit;
 			sourceTree = "<group>";
@@ -92,6 +105,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2AB7ACFC1D53721A00A5F64A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AB7AD071D53723400A5F64A /* VersionKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2ADD21E01C56642D00252DB5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,9 +124,27 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2ADD21E21C56642D00252DB5 /* VersionKit */ = {
+		2AB7ACFE1D53721A00A5F64A /* VersionKit macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2ADD21F41C56642E00252DB5 /* Build configuration list for PBXNativeTarget "VersionKit" */;
+			buildConfigurationList = 2AB7AD041D53721A00A5F64A /* Build configuration list for PBXNativeTarget "VersionKit macOS" */;
+			buildPhases = (
+				2AB7ACFA1D53721A00A5F64A /* Sources */,
+				2AB7ACFB1D53721A00A5F64A /* Frameworks */,
+				2AB7ACFC1D53721A00A5F64A /* Headers */,
+				2AB7ACFD1D53721A00A5F64A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VersionKit macOS";
+			productName = "VersionKit macOS";
+			productReference = 2AB7ACFF1D53721A00A5F64A /* VersionKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2ADD21E21C56642D00252DB5 /* VersionKit iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ADD21F41C56642E00252DB5 /* Build configuration list for PBXNativeTarget "VersionKit iOS" */;
 			buildPhases = (
 				2ADD21DE1C56642D00252DB5 /* Sources */,
 				2ADD21DF1C56642D00252DB5 /* Frameworks */,
@@ -116,7 +155,7 @@
 			);
 			dependencies = (
 			);
-			name = VersionKit;
+			name = "VersionKit iOS";
 			productName = VersionKit;
 			productReference = 2ADD21E31C56642D00252DB5 /* VersionKit.framework */;
 			productType = "com.apple.product-type.framework";
@@ -149,6 +188,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Richard Stelling";
 				TargetAttributes = {
+					2AB7ACFE1D53721A00A5F64A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					2ADD21E21C56642D00252DB5 = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -169,13 +211,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2ADD21E21C56642D00252DB5 /* VersionKit */,
+				2ADD21E21C56642D00252DB5 /* VersionKit iOS */,
+				2AB7ACFE1D53721A00A5F64A /* VersionKit macOS */,
 				2ADD21EB1C56642E00252DB5 /* VersionKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2AB7ACFD1D53721A00A5F64A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2ADD21E11C56642D00252DB5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,6 +243,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2AB7ACFA1D53721A00A5F64A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AB7AD081D53723400A5F64A /* Version.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2ADD21DE1C56642D00252DB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,12 +272,54 @@
 /* Begin PBXTargetDependency section */
 		2ADD21EF1C56642E00252DB5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2ADD21E21C56642D00252DB5 /* VersionKit */;
+			target = 2ADD21E21C56642D00252DB5 /* VersionKit iOS */;
 			targetProxy = 2ADD21EE1C56642E00252DB5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		2AB7AD051D53721A00A5F64A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "VersionKit/Info-macOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.empiricalmagic.VersionKit-macOS";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2AB7AD061D53721A00A5F64A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "VersionKit/Info-macOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.empiricalmagic.VersionKit-macOS";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		2ADD218D1C565C7500252DB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -260,6 +360,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = VersionKit;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -301,6 +402,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = VersionKit;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -316,12 +418,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = VersionKit/Info.plist;
+				INFOPLIST_FILE = "VersionKit/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.richardstelling.VersionKit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -333,12 +434,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = VersionKit/Info.plist;
+				INFOPLIST_FILE = "VersionKit/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.richardstelling.VersionKit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -366,6 +466,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2AB7AD041D53721A00A5F64A /* Build configuration list for PBXNativeTarget "VersionKit macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AB7AD051D53721A00A5F64A /* Debug */,
+				2AB7AD061D53721A00A5F64A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		2ADD21751C565C7500252DB5 /* Build configuration list for PBXProject "VersionKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -375,7 +483,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2ADD21F41C56642E00252DB5 /* Build configuration list for PBXNativeTarget "VersionKit" */ = {
+		2ADD21F41C56642E00252DB5 /* Build configuration list for PBXNativeTarget "VersionKit iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2ADD21F51C56642E00252DB5 /* Debug */,

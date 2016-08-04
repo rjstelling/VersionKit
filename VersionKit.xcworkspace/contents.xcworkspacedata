@@ -5,9 +5,9 @@
       location = "group:Documentation/VersionKit Documentation.playground">
    </FileRef>
    <FileRef
-      location = "group:Projects/VersionKit/VersionKit.xcodeproj">
+      location = "group:Projects/Example/Example.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Projects/Example/Example.xcodeproj">
+      location = "group:Projects/VersionKit/VersionKit.xcodeproj">
    </FileRef>
 </Workspace>

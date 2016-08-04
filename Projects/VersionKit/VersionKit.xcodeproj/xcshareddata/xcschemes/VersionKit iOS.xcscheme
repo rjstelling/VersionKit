@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2ADD217A1C565C7500252DB5"
+               BlueprintIdentifier = "2ADD21E21C56642D00252DB5"
                BuildableName = "VersionKit.framework"
-               BlueprintName = "VersionKit"
+               BlueprintName = "VersionKit iOS"
                ReferencedContainer = "container:VersionKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2ADD21841C565C7500252DB5"
+               BlueprintIdentifier = "2ADD21EB1C56642E00252DB5"
                BuildableName = "VersionKitTests.xctest"
                BlueprintName = "VersionKitTests"
                ReferencedContainer = "container:VersionKit.xcodeproj">
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2ADD217A1C565C7500252DB5"
+            BlueprintIdentifier = "2ADD21E21C56642D00252DB5"
             BuildableName = "VersionKit.framework"
-            BlueprintName = "VersionKit"
+            BlueprintName = "VersionKit iOS"
             ReferencedContainer = "container:VersionKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2ADD217A1C565C7500252DB5"
+            BlueprintIdentifier = "2ADD21E21C56642D00252DB5"
             BuildableName = "VersionKit.framework"
-            BlueprintName = "VersionKit"
+            BlueprintName = "VersionKit iOS"
             ReferencedContainer = "container:VersionKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2ADD217A1C565C7500252DB5"
+            BlueprintIdentifier = "2ADD21E21C56642D00252DB5"
             BuildableName = "VersionKit.framework"
-            BlueprintName = "VersionKit"
+            BlueprintName = "VersionKit iOS"
             ReferencedContainer = "container:VersionKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
