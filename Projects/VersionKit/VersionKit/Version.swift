@@ -65,8 +65,8 @@ public struct Version {
             count += 1
         }
         
-        maxOptVers = maxOptVers.reverse()
-        versionArray.replaceRange((5 - maxOptVers.count)..<versionArray.count, with: maxOptVers)
+        maxOptVers = maxOptVers.reversed()
+        versionArray.replaceSubrange((5 - maxOptVers.count)..<versionArray.count, with: maxOptVers)
         
         let byte7           = (versionArray[0] << 56)
         let byte6           = (versionArray[1] << 48)
@@ -93,7 +93,7 @@ public struct Version {
         var sections: [String] = ["0", "0", "0", "0", "0"]
         let elements = versionString.characters.split { $0 == "." }.map { String($0) }
         
-        sections.replaceRange(0..<elements.count, with: elements)
+        sections.replaceSubrange(0..<elements.count, with: elements)
         
         if  let maj = UInt8(String(sections[0])),
             let min = UInt8(String(sections[1])),
@@ -119,7 +119,7 @@ public struct Version {
     }
     
     // Test your version against the actural version
-    public func validate(versionString: String) -> Bool {
+    public func validate(_ versionString: String) -> Bool {
         
         let Nbsp: Character = " "
         let elements = versionString.characters.split { $0 == Nbsp }
@@ -146,7 +146,7 @@ public struct Version {
         }
     }
     
-    internal func validate(`operator`: LogicalOperator, version: Version) -> Bool {
+    internal func validate(_ operator: LogicalOperator, version: Version) -> Bool {
         
         switch `operator` {
             
@@ -176,12 +176,11 @@ public struct Version {
         }
     }
         
-    internal static func formatValidation(testString: String) -> Bool {
+    internal static func formatValidation(_ testString: String) -> Bool {
         
-        func match(regex: String, search: String) -> Bool {
+        func match(_ regex: String, search: String) -> Bool {
             
-            if let regex = try? NSRegularExpression(pattern: regex, options: NSRegularExpressionOptions.CaseInsensitive)
-                where regex.numberOfMatchesInString(search, options: [], range: NSMakeRange(0, search.characters.count)) > 0 {
+            if let regex = try? NSRegularExpression(pattern: regex, options: NSRegularExpression.Options.caseInsensitive), regex.numberOfMatches(in: search, options: [], range: NSMakeRange(0, search.characters.count)) > 0 {
                 return true
             }
             else {
@@ -202,7 +201,7 @@ extension Version: CustomDebugStringConvertible {
     
     public var debugDescription: String {
         get {
-            return "\(String(self.dynamicType)) -> \(self.versionString) (\(self.versionInteger))"
+            return "\(String(describing: type(of: self))) -> \(self.versionString) (\(self.versionInteger))"
         }
     }
     
