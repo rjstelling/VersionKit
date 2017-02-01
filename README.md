@@ -6,6 +6,7 @@ A lightweight semantic version checker written in Swift. Supports upto 5 version
 
 ##Usage
     
+```swift
     import VersionKit
 
     let version = Version(versionString: "1.2.3")
@@ -14,7 +15,8 @@ A lightweight semantic version checker written in Swift. Supports upto 5 version
     
         "version will match 1.2.x.y.z"
     }
-    
+```
+
 ## Thanks to
 
 [Henry Gibson](http://thisismyengine.com)
